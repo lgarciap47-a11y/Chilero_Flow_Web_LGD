@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilero Flow | Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contacto_lgd.css">
+</head>
+<body>
+
+    <header class="header_lgd">
+        <nav class="nav-menu_lgd">
+            <div class="logo-container_lgd">
+                <img src="logolgd.png" width="70" height="70" />
+            </div>
+            <ul class="nav-list_lgd">
+                <li><a href="index_lgd.html">Inicio</a></li>
+                <li><a href="productos2_lgd.html">Productos</a></li>
+                <li><a href="contacto_lgd.html" class="active_lgd">Contacto</a></li>
+                <li><a href="acerca_de_lgd.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content_lgd">
+        <div class="form-container_lgd">
+            <h2>Escríbenos tu Mensaje</h2>
+            <p>¿Tienes dudas con las tallas o envíos en Guatemala? Mandanos un mensaje.</p>
+            
+            <form class="contact-form_lgd" onsubmit="event.preventDefault(); alert('¡Simulación de envío con éxito!');">
+                <div class="group-field_lgd">
+                    <label>Nombre Completo:</label>
+                    <input type="text" placeholder="Ej. Evelyn Cardona" required>
+                </div>
+                <div class="group-field_lgd">
+                    <label>Correo Electrónico:</label>
+                    <input type="email" placeholder="intouch@correo.com" required>
+                </div>
+                <div class="group-field_lgd">
+                    <label>Mensaje o Duda:</label>
+                    <textarea rows="5" placeholder="Escribe aquí tu consulta..." required></textarea>
+                </div>
+                <button type="submit" class="btn-send_lgd">Enviar Consulta</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer_lgd">
+        <p>&copy; 2026 Chilero Flow. Todos los derechos reservados.</p>
+        <div class="social-links_lgd">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+    </footer>
+
+</body>
+</html>

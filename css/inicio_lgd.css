@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0fdfa;
+    color: #1f2937;
+}
+
+.header_lgd {
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 5%;
+}
+
+.nav-menu_lgd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container_lgd {
+    color: #06b6d4;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon_lgd {
+    font-size: 28px;
+    color: #06b6d4;
+}
+
+.nav-list_lgd {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list_lgd a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list_lgd a:hover, .nav-list_lgd a.active_lgd {
+    color: #06b6d4;
+}
+
+.main-content_lgd {
+    padding: 40px 5%;
+}
+
+.promo-section_lgd {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
+}
+
+.promo-section_lgd h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.new-clothing_lgd h2 {
+    margin-bottom: 20px;
+    color: #0f766e;
+    border-left: 5px solid #06b6d4;
+    padding-left: 10px;
+}
+
+.grid-clothes_lgd {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.card-preview_lgd {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-bottom: 4px solid #06b6d4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prod-img_lgd {
+    width: 100%;
+    max-width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card-preview_lgd p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0f766e;
+    margin-top: 5px;
+}
+
+.about-corporate_lgd {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.about-corporate_lgd h3 {
+    color: #0f766e;
+    margin: 15px 0 5px 0;
+}
+
+.footer_lgd {
+    background-color: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-links_lgd {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links_lgd a {
+    color: #06b6d4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-links_lgd a:hover {
+    color: #22d3ee;
+}
+
+@media (max-width: 600px) {
+    .nav-menu_lgd {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .grid-clothes_lgd {
+        grid-template-columns: 1fr;
+    }
+    
+    .prod-img_lgd {
+        max-width: 100%;
+        height: 280px;
+    }
+}
+

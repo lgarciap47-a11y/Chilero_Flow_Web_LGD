@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #f0fdfa; }
+
+.header_lgd { background-color: #111827; padding: 15px 5%; }
+.nav-menu_lgd { display: flex; justify-content: space-between; align-items: center; }
+.logo-container_lgd { color: #06b6d4; font-size: 24px; font-weight: bold; display: flex; align-items: center; gap: 10px; }
+.nav-list_lgd { display: flex; list-style: none; gap: 20px; }
+.nav-list_lgd a { color: #9ca3af; text-decoration: none; font-weight: 500; }
+.nav-list_lgd a:hover, .nav-list_lgd a.active_lgd { color: #06b6d4; }
+
+.main-content_lgd { padding: 60px 5%; display: flex; justify-content: center; }
+
+.form-container_lgd {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    max-width: 600px;
+    width: 100%;
+    border-top: 5px solid #06b6d4;
+}
+
+.form-container_lgd h2 { color: #0f766e; margin-bottom: 10px; }
+.form-container_lgd p { color: #6b7280; margin-bottom: 25px; font-size: 15px; }
+
+.group-field_lgd { margin-bottom: 20px; display: flex; flex-direction: column; gap: 5px; }
+.group-field_lgd label { font-weight: 600; color: #374151; font-size: 14px; }
+.group-field_lgd input, .group-field_lgd textarea {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+.group-field_lgd input:focus, .group-field_lgd textarea:focus {
+    border-color: #06b6d4;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+.btn-send_lgd {
+    background-color: #06b6d4;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+.btn-send_lgd:hover { background-color: #0891b2; }
+
+.footer_lgd { background-color: #111827; color: #9ca3af; text-align: center; padding: 20px; margin-top: 40px; }
+
+@media (max-width: 600px) {
+    .nav-menu_lgd { flex-direction: column; gap: 15px; }
+    .form-container_lgd { padding: 25px; }
+}
